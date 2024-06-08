@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Google tag (gtag.js) -->
     <script
@@ -17,16 +17,21 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contador</title>
+    <title>Contador de palabras online</title>
+    <link rel="icon" type="image/x-icon" href="./fav-contar-v3.png" />
+    <meta
+      name="description"
+      content="El mejor contador de palabraas online, solo cargas palabras y te entregamos mucha información, palabras repetidas, cantidad y mucho mas, empeza ahora!"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./contador.js"></script>
   </head>
   <body>
+    <div class="logoprincipal">
+      <img src="./fav-contar-v3.png" alt="logo" />
+      <h1>Contador de palabras online</h1>
+    </div>
     <div class="vistaGeneral">
-      <div class="top10">
-        <h3>Densidad de palabras</h3>
-        <ul class="listTop"></ul>
-      </div>
       <textarea
         class="cargatexto"
         id="area"
@@ -35,8 +40,12 @@
         data-gtm-form-interact-field-id="0"
         onkeyup="wordCount()"
       >
-Cargar texto aqui...</textarea
+Cargar texto aqui... y el conteo se realizara automaticamente</textarea
       >
+      <div class="top10">
+        <h3>Densidad de palabras</h3>
+        <ul class="listTop"></ul>
+      </div>
       <div class="resultados">
         <p class="carqty">Cantidad de caracteres:</p>
         <p class="wordqty">Cantidad de palabras:</p>
