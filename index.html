@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contador</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./contador.js"></script>
+  </head>
+  <body>
+    <div class="vistaGeneral">
+      <div class="top10">
+        <h3>Densidad de palabras</h3>
+        <ul class="listTop"></ul>
+      </div>
+      <textarea
+        class="cargatexto"
+        id="area"
+        cols="20"
+        rows="10"
+        data-gtm-form-interact-field-id="0"
+        onkeyup="wordCount()"
+      >
+Cargar texto aqui...</textarea
+      >
+      <div class="resultados">
+        <p class="carqty">Cantidad de caracteres:</p>
+        <p class="wordqty">Cantidad de palabras:</p>
+        <button
+          type="button"
+          value="Contar las palabras"
+          onclick="wordCount();"
+          class="botonContar"
+        >
+          CONTAR
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
